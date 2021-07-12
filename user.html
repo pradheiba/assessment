@@ -1,0 +1,52 @@
+<html>
+    <title>Kafene</title>
+    <head>
+        <link rel="stylesheet" href="./topbar.css">
+        <link rel ="stylesheet" href="./user.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./user.js"></script>
+    </head>
+    <body>
+        <header id="top-bar">
+            <div id="nav">
+                <div id="logo-wrapper">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="kafenelogo"/>
+                   <p class="brand-name">kafene</p>
+                </div>
+                <div id="menu-items">
+                    <a href="./order.html">Orders</a>
+                    <a href="./product.html">Products</a>
+                    <a href="./user.html">Users</a>
+                </div>
+            </div>
+            <div>
+                <a href="./login.html" id="logout">Logout</a>
+            </div>
+        </header>
+        <main id="main-section">
+            <div id="main-content">
+                <h1 id="main-heading">Users</h1>
+                <div id="content">
+                    <form>
+                        <input type="search" id="search-input" class="search-bar"placeholder="Search by Name"/>
+                        <input type="reset" class="reset-btn" value="Reset"/>
+                    </form>
+                    <div id="content-right">
+                        <table>
+                            <tr>
+                                <th>iD</th>
+                                <th>user avatar</th>
+                                <th>full name</th>
+                                <th>DoB</th>
+                                <th>gender</th>
+                                <th>current location</th>
+                            </tr>
+                            <tbody id="tableData"></tbody>
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

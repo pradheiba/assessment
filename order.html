@@ -1,0 +1,71 @@
+<html>
+    <title>Kafene</title>
+    <head>
+        <link rel="stylesheet" href="./topbar.css">
+        <link rel ="stylesheet" href="./order.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./orders.js"></script>
+    </head>
+    <body>
+        <header id="top-bar">
+            <div id="nav">
+                <div id="logo-wrapper">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="kafenelogo"/>
+                   <p class="brand-name">kafene</p>
+                </div>
+                <div id="menu-items">
+                    <a href="./order.html">Orders</a>
+                    <a href="./product.html">Products</a>
+                    <a href="./user.html">Users</a>
+                </div>
+            </div>
+            <div>
+                <a id ="logout"href="./login.html">Logout</a>
+            </div>
+        </header>
+        <main id="main-section">
+            <div id="main-content">
+                <h1 id="main-heading">Orders</h1>
+                <div id="content">
+                    <div id="content-left">
+                        <h3 id="left-heading">Filters</h3>
+                        <div id="left-content">
+                            <p>count:<span id="count"></span></p>
+
+                            <label id="left-label">
+                                <!-- <input type="checkbox" id="new"name="orders-new">New -->
+                                <input type="checkbox" id="new" name="new"checked="true"/>new
+
+                            </label>
+                            <label id="left-label">
+                                <input type="checkbox" id="packed"name="orders-packed" checked="true">Packed
+                            </label>
+                            <label id="left-label">
+                                <input type="checkbox" id="transit"name="orders-transit"checked="true">InTransit
+                            </label>
+                            <label id="left-label">
+                                <input type="checkbox" id="delivered"name="orders-delivered"checked="true">Delivered
+                            </label>
+                        </div>
+                    </div>
+                    <div id="content-right">
+                        <table>
+                            <tr>
+                                <th>id</th>
+                                <th>customer</th>
+                                <th>date</th>
+                                <th>amount</th>
+                                <th>sale</th>
+                            </tr>
+                            <tbody id="tableNew"></tbody>
+                            <tbody id="tablePacked"></tbody>
+                            <tbody id="tableTransit"></tbody>
+                            <tbody id="tableDelivered"></tbody>
+                           
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
